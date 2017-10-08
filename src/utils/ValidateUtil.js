@@ -13,9 +13,6 @@ const ValidateUtil = {
             jsonError = new JSONError(password_length_is_not_valid, 6);
         }
         return jsonError;
-    },
-    hasVipToken: function(vip_token){
-        return vip_token && !_.isEmpty(vip_token);
     }
 };
 module.exports = ValidateUtil;
