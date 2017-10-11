@@ -41,12 +41,6 @@ const TokenUtil = {
             return false;
         }
     },
-    signEmailVerificationToken: function() {
-        return uuid.v4();
-    },
-    signPasswordVerificationToken: function () {
-        return uuid.v4();
-    },
     getTokenByReq: function (req) {
         const {query={}} = req;
         return query.token || req.get('token');

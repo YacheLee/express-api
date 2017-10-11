@@ -1,8 +1,6 @@
-/**
- * Created by Scott on 2016/9/27.
- */
 const mongoose = require("mongoose");
 const CryptUtil = require("../utils/CryptUtil");
+const DataUtil = require("../utils/DataUtil");
 
 const Token = new mongoose.Schema({
     _id: {
@@ -19,6 +17,12 @@ const Token = new mongoose.Schema({
 Token.method({});
 
 Token.statics = {
+    findOneJson(query={}, projection={}, options={}){
+        return DataUtil.findOneJson(this, query, projection, options);
+    },
+    findJson(query={}, projection={}, options={}){
+        return DataUtil.findJson(this, query, projection, options);
+    }
 };
 if(!mongoose.models.Token){
     mongoose.model('Token', Token);

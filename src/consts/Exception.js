@@ -11,7 +11,6 @@ const Exception = {
             zh_tw: '此帳號尚未註冊'
         }
     },
-
     password_length_is_not_valid: {
         errorCode: 10003,
         msg: {
@@ -40,6 +39,12 @@ const Exception = {
         errorCode: 10007,
         msg: {
             zh_tw: 'Email格式有誤'
+        }
+    },
+    login_failed: {
+        errorCode: 10008,
+        msg: {
+            zh_tw: '登入失敗'
         }
     },
     server_error: {
