@@ -1,6 +1,3 @@
-/**
- * Created by Scott on 2016/10/13.
- */
 "use strict";
 const Promise  = require("bluebird");
 const mongoose  = require("mongoose");
