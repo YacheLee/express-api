@@ -1,6 +1,3 @@
-/**
- * Created by Scott on 2016/10/13.
- */
 const _ = require("lodash");
 const moment = require("moment-timezone");
 const {time_zone} = require('../config');

@@ -1,5 +1,4 @@
 module.exports = {
-    testing_token:"testing_token",
     time_zone: "Asia/Taipei",
     env: 'test',
     db: 'mongodb://127.0.0.1/test',
