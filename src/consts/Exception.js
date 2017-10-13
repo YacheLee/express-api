@@ -47,6 +47,12 @@ const Exception = {
             zh_tw: '登入失敗'
         }
     },
+    empty_error: {
+        errorCode: 99998,
+        msg: {
+            zh_tw: '抱歉，有必填欄位是空值。'
+        }
+    },
     server_error: {
         errorCode: 99999,
         msg: {
